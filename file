@@ -1,0 +1,38 @@
+/* Lets create a web app with title Ernst and Young hack pions */
+var title = document.createElement('h1');
+title.innerHTML = 'Ernst and Young hack pions';
+document.body.appendChild(title);
+
+/* Add a yellow background to title */
+title.style.backgroundColor = 'yellow';
+
+/* Upload the resume heading */
+var resumeHeading = document.createElement('h2');
+resumeHeading.innerHTML = 'Upload the Resume';
+document.body.appendChild(resumeHeading);
+
+/* File upload input */
+var fileUpload = document.createElement('input');
+fileUpload.type = 'file';
+fileUpload.name = 'file';
+fileUpload.id = 'file';
+document.body.appendChild(fileUpload);
+
+/* Enter the job description heading */
+var jobDescriptionHeading = document.createElement('h2');
+jobDescriptionHeading.innerHTML = 'Enter the Job Description';
+document.body.appendChild(jobDescriptionHeading);
+
+/* Text input area with id JD */
+var jobDescription = document.createElement('textarea');
+jobDescription.id = 'JD';
+jobDescription.name = 'JD';
+jobDescription.rows = '10';
+jobDescription.cols = '50';
+document.body.appendChild(jobDescription);
+
+/* Button with label submit in new line */
+var submitButton = document.createElement('button');
+submitButton.innerHTML = 'Submit';
+document.body.appendChild(submitButton);
+

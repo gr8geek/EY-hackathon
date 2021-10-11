@@ -10,9 +10,10 @@ def extractSkillstoVec(data,w2v):
     if len(i.strip().split())==1:
       try:
         #print(i)
-        sk2.append(i.strip())
         vec = w2v.wv.__getitem__(i.strip())
         sk1.append(vec)
+        sk2.append(i.strip())
+
 
       except:
         pass

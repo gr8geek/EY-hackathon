@@ -1,0 +1,15 @@
+     Full stack development capability deliver new features by designing, developing and maintaining applications leveraging a Microsoft-Stack / .Net platform.
+    Excellent capability in front-end, back-end, and database development.
+    Front-end: HTML5, CSS, TypeScript, Angular and Bootstrap
+    Back-end: .NET/C#
+    Database development: creating and optimizing queries using SQL Server and MS Entity Framework.
+    Broad knowledge of various front-end frameworks and web development tools.
+    A strong eye for UI/UX design best practices.
+    Deliver solutions from business requirements to technical design to final product.
+    Ensure quality by supporting corporate coding and architectural standards.
+    Participate in the team s design, and code reviews, and apply departmental design approach and best practices.
+    Document efforts by providing well-formed, readable code, design documentation, and project documentation as needed.
+    Responsible for the creation of programmatic modules, unit tests and test data related to development assignments
+    Promote a collaborative spirit and a positive team environment by maintaining a spirit of openness, information sharing, problem-solving and support for common goals.
+    Ability to prioritize and manage multiple tasks; as well as define problems, and develop methods to resolve them in a timely manner
+    Maintain the consistently high quality of the software code

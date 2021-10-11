@@ -8,6 +8,7 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!--<script src = "{{ url_for('static', filename='js/script.js') }}"></script> -->
         <nav>
             <div class="nav-wrapper blue">
               <a href="#" class="brand-logo right">Resume Rank</a>
@@ -30,7 +31,7 @@
         <input type="file" name="jdfile" id="jdfile"/>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="uploadJD()">SEND</a>
     </div>
   </div>
 
@@ -41,7 +42,7 @@
     <input type="file" name="resfile" id="resfile"/>
 
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
+      <button  class="modal-close waves-effect waves-green btn-flat" onclick="uploadSingleRes()">SEND</button>
     </div>
   </div>
 
@@ -57,54 +58,17 @@
     </div>
   </div>
 
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <h4>Enter JD Manually</h4>
-    </div>
-    <input type="text" name="jdtxt" id="jdtxt"/>
-
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
-
-    </div>
-  </div>
-
   <div id="modal5" class="modal">
     <div class="modal-content">
       <h4>Alpha paramerter</h4>
     </div>
     <div style="display: flex;flex-direction: row; margin-left: 2.5%;">
-      <div class="paramscrol">
-        <div class="alphasubpanel">
-          <label for="pr1">Param 1 </label>
-          <input class = "jdpr" type="range" name="pr1" min="-1000" max="1000" id="jdtxt1" onchange="var ele = document.getElementById('v1');console.log(v1);"/>
-          <h5 id="v1">12</h5>
-          <button class = "btn red"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        </div>
-        <div class="alphasubpanel">
-          <label for="pr1">Param 2 </label>
-          <input class = "jdpr" type="range" name="pr1" min="-1000" max="1000" id="jdtxt2"/>
-          <button class = "btn red"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        </div>
-        <div class="alphasubpanel">
-          <label for="pr1">Param 3 </label>
-          <input class = "jdpr" type="range" name="pr1" min="-1000" max="1000" id="jdtxt3"/>
-          <button class = "btn red"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        </div>
-        <div class="alphasubpanel">
-          <label for="pr1">Param 4 </label>
-          <input class = "jdpr" type="range" name="pr1" min="-1000" max="1000" id="jdtxt4"/>
-          <button class = "btn red"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        </div>
+      <div class="paramscrol" id="params11">
 
       </div>
     </div>
     </div>
 
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
-
-    </div>
   </div>
 
         <div class="container">
@@ -115,13 +79,12 @@
                 <button class = "btn green lighten-1 upload modal-trigger" href="#modal1"> Upload Job Description File</button>
                 <button class = "btn indigo accent-2 upload modal-trigger" href="#modal2"> Upload A single Resume</button>
                 <button class = "btn orange darken-1 upload modal-trigger" href="#modal3"> Upload Zip file of resumes</button>
-                <button class = "btn blue darken-1 upload modal-trigger"   href="#modal4"> Manually Enter the JD</button>
                 <button class = "btn purple darken-1 upload modal-trigger"   href="#modal5">JD Parameters  </button>
 
             </div>
 
         </div>
-        <script src = "{{ url_for('static', filename='js/script.js') }}"></script>
+        <script src = "{{ url_for('static', filename='js/script.js') }}"></script> 
 
     </body>
 

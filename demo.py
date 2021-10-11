@@ -36,6 +36,6 @@ def rankScore(resumeParams,JDparams,alpha):
 
 
 '''
-data2 = resumeparse.read_file('Web_Developer_Resume_1.pdf', 'w')
+data2 = resumeparse.read_file('jdfile.txt', 'w')
 #skills = data2['skills']
 print(data2)

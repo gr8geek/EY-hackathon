@@ -1,0 +1,35 @@
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
+.upload{
+    display: flex;
+    margin : auto;
+}
+.container{
+    height: 80vh;
+}
+.jdpr{
+    
+}
+.paramscrol{
+    width:70%;
+}
+
+.paramoption{
+    width:fit-content
+}
+.alphasubpanel{
+    display: flex;
+    flex-direction: row;
+}
+#jdtxt{
+    margin: 2%;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,118,1) 0%, rgba(0,212,255,1) 86%);
+        
+}
+

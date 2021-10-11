@@ -22,15 +22,28 @@ def rankScore(resumeParams,JDparams,alpha):
   #JDw = JDparams * alpha
   print("=====")
   print(JDparams.shape)
+  
   print(alpha.shape)
   JDw = []
   for i in range(0,alpha.shape[1]):
     JDw.append(JDparams[i]*alpha[0][i])
-  JDw = np.array(JDw)
-  mat1 = np.outer(resumeParams,JDw)
+  #JDw = np.array(JDw)
+  score = 0
+  for i in JDw:
+    for j in resumeParams:
+      score+= -np.dot(i,j)*np.log(1/np.linalg.norm(i-j))
+  
+  #mat1 = np.outer(resumeParams,JDw)
+  ''''
+  print("Resume Params")
+  print(resumeParams)
+  print("Jdw")
+  print(JDw)
+  print("-------------_Dim 1-----------------",mat1.shape)
   score = np.sum(np.sum(mat1))
   print(score,"  score")
   print(score.shape,"     score shape")
+  '''
   return score
 
 def JDtotxt(JobDesc,model):

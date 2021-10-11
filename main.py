@@ -104,6 +104,8 @@ def compute():
 
 @app.route('/',methods=['GET'])
 def home():
+   #return render_template('index.html')
+   #file = open('')
    return render_template('index.html')
 
 

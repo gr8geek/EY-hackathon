@@ -1,6 +1,12 @@
 var skillsvec = null;
 var skillsname = null;
 var skillsid = []
+class Data {
+  constructor(name,score){
+    this.name = name;
+    this.score = score;
+  }
+}
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Hello World")
     var elems = document.querySelectorAll('.modal');
@@ -15,16 +21,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
       formData.append("file", Resume);
       var alpha = []
-      
-      formData.append("skillsalpha",)
+      for (var i in skillsname){
+        var temp = document.getElementById("pa"+i.toString())
+        alpha.push(temp.value)
+      }
+      console.log(alpha)
+      formData.append("skillsalpha","["+alpha.toString()+"]")
+      console.log(alpha.toString())
       formData.append("skillsvec",JSON.stringify(skillsvec))
       await fetch('/computessingle', {
         method: "POST", 
         body: formData
       }).then(response =>{
-        alert('The file has been uploaded successfully.')
+        response.json().then(
+          res =>{
+            console.log(res.Rank)
+            console.log(res["Rank"])
+            alert('resume Rank : '+res.Rank.toString())
+          }
+        )
       }); 
       }
+      async function getMultiple() {
+        let formData = new FormData(); 
+        var Resume = document.getElementById("resfile").files[0]
+  
+        formData.append("file", Resume);
+        var alpha = []
+        for (var i in skillsname){
+          var temp = document.getElementById("pa"+i.toString())
+          alpha.push(temp.value)
+        }
+        console.log(alpha)
+        formData.append("skillsalpha","["+alpha.toString()+"]")
+        console.log(alpha.toString())
+        formData.append("skillsvec",JSON.stringify(skillsvec))
+        await fetch('/computemultiple', {
+          method: "POST", 
+          body: formData
+        }).then(response =>{
+          //console.log(response.json())
+
+          response.json().then(resp =>{
+            console.log(resp)
+            console.log(resp)
+            var resume1 = resp.Resume
+            var score1 = resp.Scores
+            var arr1 = []
+            for(var i in resume1){
+              var name = resume1[i]
+              var score = score1[i]
+              var temp2 = new Data(name,score)
+              arr1.push(temp2)
+            }
+            arr1.sort(function(a,b){
+              return b.score - a.score;
+            })
+            for(var i in arr1){
+              console.log(arr1[i].score)
+            }
+            for(var i in arr1){
+              var ele = document.getElementById("multians")
+              var temp1 = document.createElement("p")
+              temp1.innerText = arr1[i].name
+              var temp2 = document.createElement("p")
+              temp2.innerText = arr1[i].score
+              ele.appendChild(temp1)
+              ele.appendChild(temp2)
+            }
+          })
+          //alert('The file has been uploaded successfully.')
+        }); 
+        }
+  
     /*
       async function uploadJD() {
         let formData = new FormData(); 
@@ -76,14 +145,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
        async function uploadZipfile() {
         let formData = new FormData(); 
-        var Resume = document.getElementById("resfile").files[0]
+        var Resume = document.getElementById("zipfile").files[0]
   
         formData.append("file", Resume);
         await fetch('/zipupload', {
           method: "POST", 
           body: formData
-        }); 
-        alert('The file has been uploaded successfully.');
+        }).then(
+          resp =>{
+            
+            console.log(resp)
+          }
+        ); 
+        
         }
   
   

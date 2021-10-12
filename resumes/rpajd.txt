@@ -1,0 +1,28 @@
+EY GDS’s Tax Tech Transformation (TTT) team’s mission is to develop, implement and integrate technology solutions that better serve our clients and engagement teams. As a member of EY’s core Tax practice, you’ll develop a deep tax technical knowledge and outstanding database, data analytics and programming skills.  
+
+Ever-increasing regulations require tax departments to gather, organize and analyse more data than ever before. Often the data necessary to satisfy these ever-increasing and complex regulations must be collected from a variety of systems and departments throughout an organization. Effectively and efficiently handling the variety and volume of data is often extremely challenging and time consuming for a company.  
+
+
+Your key responsibilities
+
+Analyse client needs for automation and develop recommendations for the automation of work processes
+Build solutions utilizing RPA tools like UiPath and Blue Prism (any additional tool is an added advantage) and maintain technical responsibility for project delivery as the technical resource on a project
+Analyse As-Is and involve in the To-Be process discussion
+Install, or support the installation of, RPA software and tools in client environments
+Hands-on experience in latest version of UiPath and Blue Prism tool
+Hands-on experience in Automating Web interfaces, desktop application interfaces, Citrix interfaces, API, Building Custom codes and Mainframes.
+Hands-on experience in Automating OCR related features, Data extraction from pdf’s is preferred
+Excellent communication skills and ability to discuss complex technical concepts with engineers as well as end users
+Should be analytical and able to improvise configuration and code to adopt to new situations
+Experience with Agile development methodologies
+Responsible for effectively communicating with other team members and clients on project related information
+Understanding client requirements and preparing required documents (PDD, SDD, BRD…)
+ 
+
+Skills and attributes for success
+
+An overall experience of 5 + years of which 3 years of hands on work experience in UiPath and Blueprism
+Experience with some or all the following programming languages is preferred: Python, .NET, SQL, Java, HTML, CSS
+Working knowledge on preparing business requirement documents and solution design documents
+Excellent analysis and solutioning skills
+Quickly adapting to new technologies based on the requirements and market needs

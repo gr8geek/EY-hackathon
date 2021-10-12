@@ -14,7 +14,7 @@
               <a href="#" class="brand-logo right">Resume Rank</a>
               <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="">Resume Uploads</a></li>
-                <li><a href="">Insights</a></li>
+                <li><a href="#modal6" class = "modal-trigger" onclick="getMultiple()">Insights</a></li>
               </ul>
             </div>
           </nav>
@@ -25,6 +25,18 @@
   <!-- Modal Trigger -->
 
   <!-- Modal Structure -->
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <h4>Insights</h4>
+    </div>
+    <div id = "multians">
+      
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Upload the Job Description File</h4>
@@ -54,7 +66,7 @@
     <input type="file" name="zipfile" id="zipfile"/>
 
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="uploadZipfile()">SEND</a>
     </div>
   </div>
 
